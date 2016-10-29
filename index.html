@@ -2,7 +2,6 @@
   <head>
     <style>
       body {
-        background-color: #c0c0c0;
         font-family: Arial;
       }
       span {
@@ -12,29 +11,38 @@
       li {
         padding:5px;
       }
+      #container {
+        width:800px;
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #c0c0c0;
+      }
     </style>
   </head>
   <body>
-    <h3>How to compile and run an program written in X.</h3>
+    <div id="container">
+      <h3>How to compile and run an program written in X.</h3>
 
-    <h5>Notes</h5>
-    <ul>
-      <li>You need to have GCC or another C compiler installed.<br>
-      <li>Tutorial will be written using linux commands. There will be similar commands and tools for your own operating system.<br>
-    </ul>
-    <h5>Instructions</h5>
-    <ol>
-      <li>Download and extract this <a href="xResources.zip">zip file</a> containing the tools you will need.<br>
+      <h5>Notes</h5>
+      <ul>
+        <li>You need to have GCC or another C compiler installed.<br>
+        <li>Tutorial will be written using linux commands. There will be similar commands and tools for your own operating system.<br>
+      </ul>
+      <h5>Instructions</h5>
+      <ol>
+        <li>Download and extract this <a href="xResources.zip">zip file</a> containing the tools you will need.<br>
 
-      <li>Compile 32bitSimulatorForBinaryImage.c with <span>gcc 32bitSimulatorForBinaryImage.c</span> or using your favourite compiler.<br>
+        <li>Compile 32bitSimulatorForBinaryImage.c with <span>gcc 32bitSimulatorForBinaryImage.c</span> or using your favourite compiler.<br>
 
-      <li>Copy the X compiler binary to a.bin with <span>cp x_to_16bitHex_compiler.bin a.bin</span><br>
+        <li>Copy the X compiler binary to a.bin with <span>cp x_to_16bitHex_compiler.bin a.bin</span><br>
 
-      <li>Run the simulator executable streaming the x source code in to standard input with <span>./a.out < io.x</span>. This will produce two files: sim2 and sim3. These are the hex input for the machine.<br>
+        <li>Run the simulator executable streaming the x source code in to standard input with <span>./a.out < io.x</span>. This will produce two files: sim2 and sim3. These are the hex input for the machine.<br>
 
-      <li>Now compile 16bitSimulatorForHexImages.c with <span>gcc 16bitSimulatorForHexImages.c</span>.<br>
+        <li>Now compile 16bitSimulatorForHexImages.c with <span>gcc 16bitSimulatorForHexImages.c</span>.<br>
 
-      <li>Run the compiled executable with <span>./a.out</span>.
-    </ol>
+        <li>Run the compiled executable with <span>./a.out</span>.
+      </ol>
+    </div>
   </body>
 </html>
