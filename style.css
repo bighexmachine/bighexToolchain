@@ -9,7 +9,7 @@
 	src: url(CircularStd-Bold.otf);
 }
 
-a, a:hover
+a, a:visited, a:hover
 {
 	color:purple;
 }
