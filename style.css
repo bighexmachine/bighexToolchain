@@ -9,8 +9,10 @@
 	src: url(CircularStd-Bold.otf);
 }
 
-
-
+a, a:hover
+{
+	color:purple;
+}
 body
 {
 	margin:5% 17.5% 5% 17.5%;	
