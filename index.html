@@ -9,52 +9,54 @@
 
 
   </head>
-  
+
   <body>
-  	
+
   	<div id="container">
-    
+
       <h1>How to compile and run a program written in X.</h1>
 
       <h2>Notes</h2>
-      
+
       <ul>
         <li>You need to have GCC or another C compiler installed.<br>
-        <li>Tutorial will be written using linux commands. There will be similar commands and tools for your own operating system.<br>
+        <li>This explanation will be written using linux commands. There will be similar commands and tools for your own operating system.<br>
       </ul>
-    
+
       <h2>How to Compile</h2>
-    
+
       <ol>
         <li>Download and extract this <a href="xResources.zip">zip file</a> containing the tools you will need.<br>
 
-        <li>Compile 32bitSimulatorForBinaryImage.c with <span>gcc 32bitSimulatorForBinaryImage.c</span> or using your favourite compiler.<br>
+        <li>Open the terminal to this folder and compile the emulator file called 32bitSimulatorForBinaryImage.c by typing <span class="code">gcc 32bitSimulatorForBinaryImage.c</span> (and pressing enter) or using your favourite compiler.<br>
 
-        <li>Copy the X compiler binary to a.bin with <span>cp x_to_16bitHex_compiler.bin a.bin</span><br>
+        <li>Copy the X compiler binary to a.bin so it can be run by the simulator with <br> <span class="code">cp x_to_16bitHex_compiler.bin a.bin</span><br>
 
-        <li>Run the simulator executable streaming the x source code in to standard input with <span>./a.out < io.x</span>. This will produce two files: sim2 and sim3. These are the hex input for the machine.<br>
+        <li>Run the simulator executable, streaming the x source code in to standard input, with <span class="code">./a.out < io.x</span>. This will produce two files: sim2 and sim3. These are the hex input memory images for the machine.<br>
 
-        <li>Now compile 16bitSimulatorForHexImages.c with <span>gcc 16bitSimulatorForHexImages.c</span>.<br>
+        <li>Now compile 16bitSimulatorForHexImages.c with <span class="code">gcc 16bitSimulatorForHexImages.c</span>.<br>
 
-        <li>Run the compiled executable with <span>./a.out</span>.
+        <li>Run the compiled executable with <span class="code">./a.out</span>.
       </ol>
-    
+
+    Alternatively, run the bash script <span class="code">./compile &lt;source_code_filename.x&gt;</span> to execute these commands automatically.
+
     <h2>How to Run the Executable</h2>
-    
+
     There are four options on where to run your executable:
-    
+
     <ol>
     	<li>Via C: You can execute the code via the C Simulator as outlined in steps 5 and 6 above.
-    	<li>Via Java: You can execute the code via ModuleSim. The latest version of ModuleSim can be downloaded via our <a href = "https://github.com/uobteachingtechnologist/ModuleSim/releases">releases pages</a>.
-    		The ModuleSim files for the BigHex Machine can also be found via a <a href = "https://github.com/bighexmachine/BigHexModuleSim">Github Repo</a>.
-    	<li>Via Javascript: We have a <a href = "https://bighexmachine.github.io/JavascriptSimulator/">Javascript Simulator</a> for the BigHex Machine.
-    	<li>Via the BigHex Machine itself: You can find it in the Merchant Venturers Building.
+    	<li>Via Java: We have implimented a model of the machine in a simulator called ModuleSim which can be downloaded at the <a href = "https://github.com/uobteachingtechnologist/ModuleSim/releases">releases pages</a>.
+    		The model for the BigHex Machine can be found via a <a href = "https://github.com/bighexmachine/BigHexModuleSim">Github Repo</a>. You can load the ram image files (produced above) in to the memory modules and execute the code inside the simulator.
+    	<li>Via Javascript: We have a <a href = "https://bighexmachine.github.io/JavascriptSimulator/">Javascript Simulator</a> for the BigHex Machine. Similarly you should use the ram image files produced above) to load the program.
+    	<li>Via the BigHex Machine itself: You can find it in the Merchant Venturer's Building at the University of Bristol, where it is used by university students and local school children alike, to help provide a tactile explanation of the inner workings of a computer. 
     </ol>
-    
-    
+
+
     </div>
-    
+
     <img id = "logo" src = "logo.png" width="200">
-    
+
      </body>
 </html>

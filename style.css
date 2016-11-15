@@ -1,9 +1,9 @@
 *
 {
-	font-family:Circular;	
+	font-family:Circular;
 }
 
-@font-face 
+@font-face
 {
 	font-family: Circular;
 	src: url(CircularStd-Bold.otf);
@@ -15,7 +15,7 @@ a, a:visited, a:hover
 }
 body
 {
-	margin:5% 17.5% 5% 17.5%;	
+	margin:5% 17.5% 5% 17.5%;
 	background-color:rgba(255, 100, 255, 0.9);
 	color:white;
 	padding:25px;
@@ -25,7 +25,7 @@ body
 	padding-bottom:80px;
 }
 
-html 
+html
 {
 	background: url(comp.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -41,7 +41,7 @@ h1
 
 li
 {
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 #logo
@@ -53,5 +53,10 @@ li
 
 ul, ol
 {
-	margin-bottom:50px;	
+	margin-bottom:50px;
+}
+
+.code {
+  font-family: "Courier New";
+  background-color: #ff5bc5;
 }
